@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #333333;
+}
+
+header .logo{
+    height: 10%;
+    margin: 25px 20px;
+    position: fixed;
+    border-radius: 100px;
+}
+
+.banière{
+    position: fixed;
+    top: 25%;
+    left: 38%;
+}
+
+.banière img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -11;
+}
+
+img .article{
+    width: 1px;
+}
+
+.article{
+    width: 92%;
+    height: 65%;
+    margin-left: 0%;
+    overflow-x: visible;
+    overflow-y: scroll;
+    position: absolute;
+    left: 4%;
+    bottom: 10%;
+    text-align: center;
+    z-index: -5;
+}
+
+h4{
+    font-family: kiona ;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #93A2BF;
+}
+
+#new p{
+    font-family: kiona;
+    font-size: 0.8em;
+    color: #93a2bfb4;
+}

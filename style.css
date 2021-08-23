@@ -1,0 +1,353 @@
+@font-face {
+    font-family: Aquatico;
+    src: url(typo/Aquatico-Regular.woff);
+}
+
+@font-face {
+    font-family: kiona;
+    src: url(typo/Kiona-Regular.woff);
+}
+
+@keyframes menu {
+    from{
+        overflow: hidden;
+    }
+    to{
+        overflow: visible;
+    }
+}
+
+@keyframes color {
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 10%;
+    }
+    
+}
+
+#menu{
+    visibility: visible;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #333333;
+}
+
+header li a{
+    color: #f8f8f8;
+}
+
+strong{
+    font-weight : normal;
+    text-decoration: underline;
+}
+
+.SpaceBot{
+    transform: translateY(-58px);
+    
+}
+
+.banière img{
+    height: 80%;
+    width: auto;
+    margin: 0px 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0%;
+    z-index: -11;
+}
+
+#new{
+    width: 500px;
+    overflow: visible;
+    text-align: center;
+    position: relative;
+    left: 0%;
+    bottom: 100px;
+    z-index: -15;
+    margin: 0px;
+}
+
+.article{
+    width: 40%;
+    height: 65%;
+    margin-left: 27%;
+    overflow-x: visible;
+    overflow-y: scroll;
+    position: absolute;
+    left: 4%;
+    bottom: 10%;
+    text-align: center;
+    z-index: -5;
+}
+
+#new {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.article::-webkit-scrollbar { 
+    display: none; 
+}
+
+.SpaceBot{
+    transform: translateY(2px);
+}
+
+h4{
+    font-family: kiona ;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #93A2BF;
+}
+
+#new p{
+    font-family: kiona;
+    font-size: 0.8em;
+    color: #93a2bfb4;
+}
+
+#menu{
+    transform: translateY(-15em);
+}
+
+.derSpaceBot{
+    position: fixed;
+    top: 20%;
+    left: 0.5%;
+    z-index: -5;
+}
+
+@media (min-width: 1150px){
+    header .logo{
+        height: 10%;
+        margin: 25px 20px;
+        position: fixed;
+        border-radius: 100px;
+    }
+
+    .TechSpaceBot:hover #sous-menu{
+        animation: menu 0.2s ;
+        overflow: visible;
+    }
+
+    .JDE:hover #sous-menu{
+        animation: menu 0.2s ;
+        overflow: visible;
+    }
+
+    .SpaceBot:hover #sous-menu{
+        animation: menu 0.2s ;
+        overflow: visible;
+    }
+
+    header .JDE:hover{
+        transition: all 1s;
+        height: 15px;
+        background-color: #a1a1a6b2;
+        border-radius: 25px;
+        padding-bottom: 175px;
+    }
+
+    .TechSpaceBot:hover{
+        transition: 1s;
+        height: 15px;
+        background-color: #a1a1a6b2;
+        border-radius: 25px;
+        padding-bottom: 250px;
+    }
+
+    .SpaceBot:hover{
+        transition: all 1s;
+        height: 15px;
+        background-color: #a1a1a6b2;
+        border-radius: 25px;
+        padding: 40px 50px;
+    }
+
+    header .SpaceBot:hover{
+        transition: all 1s;
+        height: 15px;
+        background-color: #a1a1a6b2;
+        border-radius: 25px;
+        padding-bottom: 175px;
+    }
+
+    #sous-menu{
+        display: flex;
+        height:0px;
+        overflow: hidden;
+        flex-direction: column;
+        transform: translateX(-20px);
+        margin: 25px 0px;
+    }
+
+    header li{
+        list-style: none;
+        font-size: 11px;
+        font-family: Aquatico;
+        text-align: center;
+        display: inline-block;
+        padding: 40px 50px;
+        margin: 2.5% 3.5%;
+        position: relative;
+        left: 10%;
+        text-decoration: none;
+    }
+
+
+}
+
+#sous-menu li{
+    padding: 10px;
+    
+}
+/*-----------------------------------Code mobile-----------------------------------*/
+
+
+.menuMob{
+    background-color: #93A2BF;
+    border-radius: 15px;
+    border:solid 15px #93A2BF;
+    display: none;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: #4E8BBF;
+    z-index: -6;
+    visibility: collapse;
+    margin: 0px 0px;
+    min-width: 100%;
+}
+
+#UI {
+    position: absolute;
+}
+
+footer img {
+    height: 100px; 
+    position: fixed;
+    bottom: 5%;
+}
+
+.baniereUI{
+    position: fixed;
+    left: 5%;
+    z-index: 5;
+}
+
+.articleUI{
+    width: 100%;
+    left: auto;
+    right: auto;
+    z-index: -5;
+}
+
+.partenaireUI{
+    position: fixed;
+    right: 9%;
+    z-index: 5;
+}
+
+#noMob{
+    visibility: visible;
+}
+
+@media (max-width: 1150px) {
+    html{
+        overflow: hidden;
+    }
+
+    header .logo{
+        height: 5%;
+        margin: 25px 20px;
+        position: fixed;
+        border-radius: 100px;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 15%;
+        width: 100%;
+        background-color: #4E8BBF;
+        z-index: -6;
+        visibility: collapse;
+        margin: 0px 0px;
+        min-width: 100%;
+    }
+
+    .menuMob{
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 0px;
+        position: relative;
+        bottom: 10px;
+        display: inline-flex;
+        height: 50px;
+        padding: 0px 0px;
+        position : fixed;
+        left: 5%;
+        
+    }
+
+    #noMob{
+        visibility: collapse;
+    }
+
+    footer{
+        visibility: visible;
+    }
+
+    #sous-menu{
+        overflow: visible;
+    }    
+    
+    #menu{
+        visibility: visible;
+    }
+
+    header li{
+        list-style: none;
+        font-size: 10%;
+        font-family: Aquatico;
+        position: relative;
+        text-decoration: none;
+    }
+
+    #menu{
+        display: inline-block;
+        left: 22%;
+        
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .TechSpaceBot{
+        position: relative;
+        top:55px;
+    }
+}
